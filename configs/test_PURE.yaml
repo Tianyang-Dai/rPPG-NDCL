@@ -1,0 +1,14 @@
+gpu_ids: '1'
+experiment_name: test
+load_model: ./checkpoints/PURE/pretrain/55.pth
+dataset: 'PURE'
+num_threads: 6
+checkpoint_dir: ./checkpoints
+seed: 42
+log_path: ./logs
+model_name: nd  # Lowercase
+image_size: 128
+in_ch: 3  # Input video channel count
+fs: 30  # Video frame rate
+result_dir: ./results_test  # Store checkpoints and training records
+test_T: 10  # Test frame length

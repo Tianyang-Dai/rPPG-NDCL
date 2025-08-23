@@ -1,0 +1,23 @@
+gpu_ids: '1'
+experiment_name: pretrain
+dataset: 'PURE'
+batch_size: 4
+small_batch_size: 4
+start_epochs: 1
+warm_up: 30
+lr: 1.0e-4
+num_threads: 6
+save_epoch: 1
+checkpoint_dir: ./checkpoints
+epochs: 60
+continue_train: False
+seed: 42
+log_path: ./logs
+model_name: nd  # Lowercase
+image_size: 128
+use_dwa: True  # Use dynamic weight adjustment
+dwa_T: 2.0
+in_ch: 3  # Input video channel count
+fs: 30  # Video frame rate
+result_dir: ./results_test  # Store checkpoints and training records
+T: 144  # Frame length
